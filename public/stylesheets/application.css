@@ -1,0 +1,93 @@
+/* line 2, ../../app/stylesheets/application.scss */
+body {
+  background-image: url("/images/littleknobs.png");
+  background-repeat: repeat;
+}
+
+/* line 8, ../../app/stylesheets/application.scss */
+#logo {
+  font-size: 36px;
+  font-family: 'Nosifer', cursive;
+  text-decoration: none;
+}
+
+/* line 14, ../../app/stylesheets/application.scss */
+#logo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 20, ../../app/stylesheets/application.scss */
+#tekstvak {
+  background: white url(/images/gradient.png) bottom left repeat-x;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 10px 10px 0px;
+  color: #333;
+  font-size: 1em;
+}
+
+/* line 35, ../../app/stylesheets/application.scss */
+#menu ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+/* line 41, ../../app/stylesheets/application.scss */
+#menu ul li {
+  float: left;
+  margin-right: 10px;
+  background-color: white;
+}
+
+/* line 47, ../../app/stylesheets/application.scss */
+#menu ul li a {
+  border: 1px solid #b3b3b3;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: block;
+  padding: 3px 7px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 59, ../../app/stylesheets/application.scss */
+#menu ul li.selected a, #menu ul li a:hover {
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+/* line 68, ../../app/stylesheets/application.scss */
+p {
+  font-size: 14px;
+  font-family: 'Belgrano';
+}
+
+/* line 73, ../../app/stylesheets/application.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 78, ../../app/stylesheets/application.scss */
+.blog_post {
+  margin-bottom: 25px;
+}
+
+/* line 82, ../../app/stylesheets/application.scss */
+.details {
+  color: #595454;
+}
