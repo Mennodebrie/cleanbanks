@@ -1,5 +1,6 @@
 <% if post.live? %>
-<div id="tekstvak">
+
+<div class="panel">
   <article class="blog_post" id="<%= dom_id(post) %>">
     <header>
       <h1><%= link_to post.title, blog_post_url(post) %></h1>
@@ -45,4 +46,5 @@
     </footer>
   </article>
 </div>
+
 <% end %>

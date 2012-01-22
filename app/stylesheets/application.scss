@@ -1,84 +1,14 @@
-body
-{
-	background-image:url('/images/littleknobs.png');
-	//background-image:url('/images/groovepaper.png');
-	background-repeat:repeat;
-}
-
-#logo{
-	font-size: 36px;
-	font-family: 'Nosifer', cursive;
-	text-decoration: none;
-}
-
-#logo a{
-	text-decoration:none;
-	color: #000000;
-}
-
-
-#tekstvak{
-  background:#fff url(/images/gradient.png) bottom left repeat-x;
-  border:1px solid #b3b3b3;
-  border-radius:5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  box-shadow:0 0 3px rgba(0,0,0,.1);
-  -moz-box-shadow:0 0 3px rgba(0,0,0,.1);
-  -webkit-box-shadow:0 0 3px rgba(0,0,0,.1);
-  padding:15px;
-  margin:10px 10px 10px 0px;
-  color:#333;		
-  font-size: 1em;
-}
-
-#menu ul {
-  	list-style: none;
-  	padding: 0px;
-	margin-top: 10px;
-}
-
-#menu ul li {
-  	float: left;
-  	margin-right: 10px;
-	background-color: white;
-}
-
-#menu ul li a {
-  	border:1px solid #b3b3b3;
-  	box-shadow:0 0 3px rgba(0,0,0,.1);
-  	-moz-box-shadow:0 0 3px rgba(0,0,0,.1);
-  	-webkit-box-shadow:0 0 3px rgba(0,0,0,.1);
-  	overflow:hidden;
-  	display: block;
-  	padding: 3px 7px;
-  	text-decoration: none;
-	color: #000000;
-}
-
-#menu ul li.selected a, #menu ul li a:hover {
-  	border:1px solid #bbb;
-  	border-bottom:1px solid #aaa;
-  	box-shadow:0 0 6px rgba(0,0,0,.25);
-  	-moz-box-shadow:0 0 6px rgba(0,0,0,.25);
-  	-webkit-box-shadow:0 0 6px rgba(0,0,0,.25);
-  	text-decoration: none;
-}
-
-p{
-	font-size: 14px;
-	font-family: 'Belgrano';
-}
-
-a{
-	text-decoration:none;
-	color: #000000;	
-}
-
-.blog_post{
-	margin-bottom: 25px;
-}
-
-.details{
-	color: #595454;
-}
+/*	--------------------------------------------------
+	Panels
+	-------------------------------------------------- */
+	div.panel {
+		padding: 20px 20px 2px 20px;
+		background: #efefef;
+		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 20px 0;
+	}

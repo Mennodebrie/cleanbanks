@@ -5,26 +5,36 @@
   <body>
     <%= site_bar -%>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-	<div class="container">
-	  <div class="row">
-		<div class="twelvecol">
-		   <header>
-		     <%= render :partial => "/shared/header" -%>
-		   </header>
-		</div>
-	  </div>
+
+    <div class="container">
+
+	    <div class="topbar">
+	      <div class="fill">
+	        <div class="container">
+			  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path, :class => 'brand' %>
+			  <%= render :partial => "/shared/header" -%>
+	        </div>
+	      </div>
+	    </div>
+        <!-- Main hero unit for a primary marketing message or call to action -->
+	      <div class="hero-unit">
+
+			<p>Avoiding The Next Banking Crisis</p>
+		 </div>	
+
+      	<div class="row">
+	        
+        		<%= yield %>
 	
-		<hr/>
-	  	<div class="row">			
-	        <%= yield %>
 		</div>
-		<hr/>		
-		<div class="row">	
-	      <footer>
-		        <%= render :partial => "/shared/footer" -%>
-	      </footer>
-		</div>
+      
+
+	  <footer>
+        <%= render :partial => "/shared/footer" -%>
+      </footer>
+
     </div>
+
     <%= render :partial => "/shared/javascripts" %>
   </body>
 </html>

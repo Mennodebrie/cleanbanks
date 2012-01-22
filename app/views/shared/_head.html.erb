@@ -7,15 +7,20 @@
   <%= csrf_meta_tag if RefinerySetting.find_or_set(:authenticity_token_on_frontend, true)-%>
   <%= yield :meta %>
 
+  <%= stylesheet_link_tag "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" %>
+ 
 
-  
-	<%= stylesheet_link_tag '/stylesheets/1140.css', :media => 'screen' %>
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+    }
+  </style>
+
+
 	<%= stylesheet_link_tag '/stylesheets/ie.css', :media => 'screen' %>	
-	<%= stylesheet_link_tag '/stylesheets/styles.css', :media => 'screen' %>
-	
+
 	<%= stylesheet_link_tag '/stylesheets/application.css', :media => 'screen' %>
 	
- 	<%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Nosifer', :media => 'screen' %>
  	<%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Belgrano', :media => 'screen' %>
 
 
