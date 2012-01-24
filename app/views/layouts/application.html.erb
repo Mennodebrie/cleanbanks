@@ -17,18 +17,23 @@
 	      </div>
 	    </div>
         <!-- Main hero unit for a primary marketing message or call to action -->
-	      <div class="hero-unit">
-
-			<p>Avoiding The Next Banking Crisis</p>
-		 </div>	
-
-      	<div class="row">
-	        
-        		<%= yield %>
-	
+		
+		<div class="row">
+			<div class="span4">
+				<%= image_tag("robijn_2.png", :border=>0) %>
+		 	</div>
+		
+			<div class="span10" id="test">
+				<h1>Avoiding The Next Banking Crisis</h1>
+				<p>A blog about banks and bank reform, by Robijn Hornstra.</p>
+			</div>
 		</div>
-      
-
+	      
+		  	<div class="row">	        
+				<%= yield %>	
+			</div>
+ 
+		
 	  <footer>
         <%= render :partial => "/shared/footer" -%>
       </footer>
