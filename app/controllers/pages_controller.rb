@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+  helper :blog_posts
   # This action is usually accessed with the root path, normally '/'
   def home
     error_404 unless (@page = Page.where(:link_url => '/').first).present?

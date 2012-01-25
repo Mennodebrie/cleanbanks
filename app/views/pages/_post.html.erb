@@ -1,0 +1,35 @@
+<% @blog_post = BlogPost.first %>
+<article class="blog_post" id="<%= dom_id(@blog_post) %>">
+    <header>
+      <h1><%= link_to @blog_post.title, blog_post_url(@blog_post) %></h1>
+      <section class='details'>
+        <time datetime="<%=l @blog_post.published_at.to_date, :format => :default %>" class='posted_at'>
+          <%= t('created_at', :scope => 'blog.shared.posts', :when => l(@blog_post.published_at.to_date, :format => :short)) %>
+        </time>
+      </section>
+    </header>
+    <section class='clearfix'>
+
+      <% if blog_post_teaser_enabled? %>
+        <%= blog_post_teaser(@blog_post) %>
+      <% else %>
+        <%= @blog_post.body.html_safe %>
+      <% end %>
+    </section>
+    <footer>
+      <p>
+        <%= link_to t('read_more', :scope => 'blog.shared.posts'), blog_post_url(@blog_post) if blog_post_teaser_enabled? %> or
+	
+		<%= link_to ('go to the blog'), "/blog" %>
+      </p>
+      <aside class='comment_count'>
+        <% if BlogPost.comments_allowed? %>
+          <% if @blog_post.comments.any? %>
+             (<%= pluralize(@blog_post	.comments.approved.count, t('singular', :scope => 'blog.shared.comments')) %>)
+          <% else %>
+                (<%= t('none', :scope => 'blog.shared.comments') %>)
+          <% end %>
+        <% end %>
+      </aside>
+    </footer>
+  </article>
