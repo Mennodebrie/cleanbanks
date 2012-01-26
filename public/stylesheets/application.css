@@ -20,3 +20,9 @@ hr {
   background-color: #C0C0C0;
   height: 1px;
 }
+
+/* line 22, ../../app/stylesheets/application.scss */
+#moveup {
+  margin-top: -18px;
+  margin-left: 1px;
+}

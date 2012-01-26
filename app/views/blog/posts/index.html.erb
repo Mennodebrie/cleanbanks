@@ -1,17 +1,42 @@
 <div class="span16">
-  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
+	<ul class="tabs" data-tabs="tabs">
+	  <li class="active"><a href="#home">Blog entries</a></li>
+	  <li><a href="#profile">Blog properties</a></li>
+	</ul>
 
-  <% if @blog_posts.any? %>
-    <section id="blog_posts">
-      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-      <%= will_paginate @blog_posts %>
-    </section>
-  <% else %>
-    <p><%= t('.no_blog_articles_yet') %></p>
-  <% end %>
+<div id="my-tab-content" class="tab-content">
+  <div class="active tab-pane" id="home">
+
+	<div class="span16" id='moveup'>
+		
+	  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
+
+	  <% if @blog_posts.any? %>
+	    <section id="blog_posts">
+	      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+	      <%= will_paginate @blog_posts %>
+	    </section>
+	  <% else %>
+	    <p><%= t('.no_blog_articles_yet') %></p>
+	  <% end %>
+	</div>
+  </div>	
+
+  <div class="tab-pane" id="profile">
+	<div class="span16" id='moveup'>
+		<div class="panel">
+		  <%= render :partial => "/blog/shared/categories" %>
+		  <%= render :partial => "/blog/shared/tags" %>
+		  <%= render :partial => "/blog/shared/rss_feed" %>
+		  <%= render :partial => "/blog/shared/archive_list" %>
+		</div>
+	</div>
+  </div>
+
+</div>	
 </div>
-
-
-
 <%= render :partial => "/shared/content_page" %>
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
+
+
+

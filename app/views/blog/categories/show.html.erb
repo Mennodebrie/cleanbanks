@@ -1,21 +1,40 @@
-<% content_for :body_content_title, @category.title %>
+<div class="span16">
+	<ul class="tabs" data-tabs="tabs">
+	  <li class="active"><a href="#home">Blog entries</a></li>
+	  <li><a href="#profile">Blog properties</a></li>
+	</ul>
 
-<% content_for :body_content_left do %>
-  <% if @blog_posts.any? %>
-    <section id="blog_posts">
-      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-      <%= will_paginate @blog_posts %>
-    </section>
-  <% else %>
-    <p>
-      <%= t('.no_posts') %>
-    </p>
-  <% end %>
-<% end %>
+<div id="my-tab-content" class="tab-content">
+  <div class="active tab-pane" id="home">
 
-<% content_for :body_content_right do %>
-  <%= render :partial => "/blog/shared/categories" %>
-<% end %>
+	<div class="span16" id='moveup'>
 
+
+	  <% if @blog_posts.any? %>
+	    <section id="blog_posts">
+	      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+	      <%= will_paginate @blog_posts %>
+	    </section>
+	  <% else %>
+	    <p>
+	      <%= t('.no_posts') %>
+	    </p>
+	  <% end %>
+
+	</div>
+  </div>	
+
+  <div class="tab-pane" id="profile">
+	<div class="span16" id='moveup'>
+		<div class="panel">
+				<%= render :partial => "/blog/shared/categories" %>
+				<%= render :partial => "/blog/shared/rss_feed" %>
+				<%= render :partial => "/blog/shared/archive_list" %>
+
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
 <%= render :partial => "/shared/content_page" %>
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
