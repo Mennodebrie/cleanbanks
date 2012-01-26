@@ -25,10 +25,20 @@
   <div class="tab-pane" id="profile">
 	<div class="span16" id='moveup'>
 		<div class="panel">
-		  <%= render :partial => "/blog/shared/categories" %>
-		  <%= render :partial => "/blog/shared/tags" %>
-		  <%= render :partial => "/blog/shared/rss_feed" %>
-		  <%= render :partial => "/blog/shared/archive_list" %>
+			<div class="row">
+				<div class="span4">
+		  			<%= render :partial => "/blog/shared/categories" %>
+				</div>
+				<div class="span4">
+		  			<%= render :partial => "/blog/shared/tags" %>
+				</div>
+				<div class="span4">
+		  			<%= render :partial => "/blog/shared/rss_feed" %>
+				</div>
+				<div class="span4">
+		  			<%= render :partial => "/blog/shared/archive_list" %>
+				</div>
+			</div>
 		</div>
 	</div>
   </div>
