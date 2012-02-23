@@ -1,5 +1,5 @@
 $(function () {
-  $('.tabs').tabs()
+  $('#tab').tab('show')
 })
 
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];

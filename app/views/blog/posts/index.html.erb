@@ -1,13 +1,13 @@
-<div class="span16">
-	<ul class="tabs" data-tabs="tabs">
-	  <li class="active"><a href="#home">Blog entries</a></li>
-	  <li><a href="#profile">Blog properties</a></li>
+<div class="span12">
+	<ul id="tab" class="nav nav-tabs">
+	  <li class="active"><a href="#home" data-toggle="tab">Blog entries</a></li>
+	  <li><a href="#profile" data-toggle="tab">Blog properties</a></li>
 	</ul>
 
 <div id="my-tab-content" class="tab-content">
   <div class="active tab-pane" id="home">
 
-	<div class="span16" id='moveup'>
+	<div class="span12" id='moveup'>
 		
 	  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
 
@@ -23,7 +23,7 @@
   </div>	
 
   <div class="tab-pane" id="profile">
-	<div class="span16" id='moveup'>
+	<div class="span12" id='moveup'>
 		<div class="panel">
 			<div class="row">
 				<div class="span3">
@@ -35,12 +35,10 @@
 				<div class="span3">
 		  			<%= render :partial => "/blog/shared/rss_feed" %>
 				</div>
-				<div class="span3">
+				<div class="span2">
 		  			<%= render :partial => "/blog/shared/archive_list" %>
 				</div>
-				<div class="span3">
-		  			<%= render :partial => "/blog/shared/social" %>
-				</div>
+
 			</div>
 		</div>
 	</div>

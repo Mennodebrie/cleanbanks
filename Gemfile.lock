@@ -32,7 +32,7 @@ GEM
       rails (~> 3.0)
     acts_as_indexed (0.7.7)
     arel (2.0.10)
-    awesome_nested_set (2.0.2)
+    awesome_nested_set (2.1.2)
       activerecord (>= 3.0.0)
     babosa (0.3.6)
     bcrypt-ruby (3.0.1)
@@ -50,11 +50,11 @@ GEM
       rack
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    excon (0.7.12)
+    excon (0.9.5)
     filters_spam (0.3)
-    fog (1.1.1)
+    fog (1.1.2)
       builder
-      excon (~> 0.7.4)
+      excon (~> 0.9.0)
       formatador (~> 0.2.0)
       mime-types
       multi_json (~> 1.0.3)
@@ -63,7 +63,7 @@ GEM
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.1)
-    friendly_id_globalize3 (3.2.1.5)
+    friendly_id_globalize3 (3.2.1.6)
       babosa (~> 0.3.0)
     fssm (0.2.8.1)
     globalize3 (0.1.0)
@@ -80,7 +80,7 @@ GEM
     multi_json (1.0.4)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
-    net-ssh (2.2.1)
+    net-ssh (2.3.0)
     nokogiri (1.5.0)
     orm_adapter (0.0.6)
     pg (0.12.2)
@@ -182,7 +182,7 @@ GEM
     tzinfo (0.3.31)
     warden (1.0.6)
       rack (>= 1.0)
-    will_paginate (3.0.2)
+    will_paginate (3.0.3)
 
 PLATFORMS
   ruby

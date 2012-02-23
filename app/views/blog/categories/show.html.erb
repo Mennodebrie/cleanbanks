@@ -1,7 +1,7 @@
 <div class="span16">
-	<ul class="tabs" data-tabs="tabs">
-	  <li class="active"><a href="#home">Blog entries</a></li>
-	  <li><a href="#profile">Blog properties</a></li>
+	<ul id="tab" class="nav nav-tabs">
+	  <li class="active"><a href="#home" data-toggle="tab">Blog entries</a></li>
+	  <li><a href="#profile" data-toggle="tab">Blog properties</a></li>
 	</ul>
 
 <div id="my-tab-content" class="tab-content">
@@ -34,7 +34,7 @@
 				<div class="span4">
 		  			<%= render :partial => "/blog/shared/rss_feed" %>
 				</div>
-				<div class="span4">
+				<div class="span3">
 		  			<%= render :partial => "/blog/shared/archive_list" %>
 				</div>
 			</div>

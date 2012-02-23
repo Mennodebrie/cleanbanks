@@ -1,0 +1,7 @@
+<div class="span3">
+  <%= t('.copyright', :year => Time.now.year,
+                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+</div>
+<div class="span8">
+	<%= render :partial => "/shared/social" %>
+</div>
