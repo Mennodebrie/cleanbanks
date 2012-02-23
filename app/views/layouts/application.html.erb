@@ -9,8 +9,10 @@
 	    <div class="navbar navbar-fixed-top">
 	      <div class="navbar-inner">
 	        <div class="container">
-			  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path, :class => 'brand' %>
-			  <%= render :partial => "/shared/header" -%>
+				<div class="nav-collapse">
+				  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path, :class => 'brand' %>
+				  <%= render :partial => "/shared/header" -%>
+				</div>
 	        </div>
 	      </div>
 	    </div>
@@ -36,6 +38,33 @@
 		  	<footer>
 	        	<%= render :partial => "/shared/footer" -%>
 	      	</footer>
+	
+	
+	
+			<div class="navbar">
+			    <div class="navbar-inner">
+			      <div class="container" style="width: auto;">
+		
+	
+			        <div class="nav-collapse">
+			          <ul class="nav">
+			            <li class="dropdown">
+			              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			              <ul class="dropdown-menu">
+			                <li><a href="#">Action</a></li>
+			                <li><a href="#">Another action</a></li>
+			                <li><a href="#">Something else here</a></li>
+			                <li class="divider"></li>
+			                <li><a href="#">Separated link</a></li>
+			                <li><a href="#">One more separated link</a></li>
+			              </ul>
+			            </li>
+			          </ul>
+
+			        </div><!-- /.nav-collapse -->
+			      </div>
+			    </div><!-- /navbar-inner -->
+			  </div>
 	    </div>
 
     <%= render :partial => "/shared/javascripts" %>
