@@ -1,5 +1,5 @@
 
- <div class="span12">
+ <div class="span10">
 	<div class="panel">
     <% flash.each do |key, value| %>
      <div id='flash' class="flash flash_<%= key %>">
@@ -8,8 +8,8 @@
     <% end %>
     <article id="blog_post">
       <header>
-        <h1><%= @blog_post.title %></h1>
-
+        <h1 class="grey"><%= @blog_post.title %></h1>
+		<hr />
       </header>
       <%= @blog_post.body.html_safe %>
 
