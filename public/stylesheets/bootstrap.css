@@ -391,10 +391,9 @@ dd {
   margin-left: 9px;
 }
 hr {
-  margin: 18px 0;
+  margin: 5px 0;
   border: 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #ffffff;
+
 }
 strong {
   font-weight: bold;
