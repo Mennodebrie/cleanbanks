@@ -1,5 +1,10 @@
 Cleanbanks::Application.routes.draw do
   # root :to => 'blog/posts#index'   
+  
+  match "archives" => "blog/posts#archives_page"
+  match "categories" => "blog/posts#categories_page"
+  match "tags" => "blog/posts#tags_page"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
