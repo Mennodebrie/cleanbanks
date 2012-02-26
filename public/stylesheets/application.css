@@ -30,5 +30,10 @@ hr {
 .grey{
     color: #C0C0C0;
 }
-
+.navbar .nav .selected > a, .navbar .nav .selected > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
