@@ -1,14 +1,5 @@
-<div class="span16">
-	<ul id="tab" class="nav nav-tabs">
-	  <li class="active"><a href="#home" data-toggle="tab">Blog entries</a></li>
-	  <li><a href="#profile" data-toggle="tab">Blog properties</a></li>
-	</ul>
-
-<div id="my-tab-content" class="tab-content">
-  <div class="active tab-pane" id="home">
-
-	<div class="span16" id='moveup'>
-
+<div class="span10">
+	  <%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
 
 	  <% if @blog_posts.any? %>
 	    <section id="blog_posts">
@@ -16,33 +7,9 @@
 	      <%= will_paginate @blog_posts %>
 	    </section>
 	  <% else %>
-	    <p>
-	      <%= t('.no_posts') %>
-	    </p>
+	    <p><%= t('.no_blog_articles_yet') %></p>
 	  <% end %>
-
-	</div>
-  </div>	
-
-  <div class="tab-pane" id="profile">
-	<div class="span16" id='moveup'>
-		<div class="panel">
-			<div class="row">
-				<div class="span4">
-		  			<%= render :partial => "/blog/shared/categories" %>
-				</div>
-				<div class="span4">
-		  			<%= render :partial => "/blog/shared/rss_feed" %>
-				</div>
-				<div class="span3">
-		  			<%= render :partial => "/blog/shared/archive_list" %>
-				</div>
-			</div>
-
-			</div>
-		</div>
-	  </div>
-	</div>
 </div>
 <%= render :partial => "/shared/content_page" %>
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
+
