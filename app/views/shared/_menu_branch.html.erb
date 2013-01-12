@@ -24,9 +24,9 @@
     <% if menu_branch_counter == 1 %>
       <ul class="dropdown-menu sub-menu">
     <% else %>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu ">
     <% end %>    
-    
+    <!-- <ul class="dropdown-menu sub-menu <%= menu_branch_counter %>">-->
       <%= render :partial => '/shared/menu_branch', :collection => children, 
                  :locals => {
 
