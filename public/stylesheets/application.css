@@ -1,25 +1,47 @@
-/*	--------------------------------------------------
-	Panels
-	-------------------------------------------------- */
-/* line 4, ../../app/stylesheets/application.scss */
-div.panel {
-  padding: 20px 20px 2px 20px;
-  background: #efefef;
-  background: -moz-linear-gradient(top, white 0%, #f4f4f4 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f4f4f4));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  margin: 0 0 20px 0;
+html, body {
+  background-image: url('../images/shl.png');
+  /*background-color: #eee;*/
 }
 
-/* line 16, ../../app/stylesheets/application.scss */
-hr {
-  border: 1;
-  background-color: #C0C0C0;
-  height: 1px;
+body { 
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
+.page-header {
+  padding: 0px 0px 0px 0px;
+  margin:  0px 0px 0px 0px;
+}
+
+#pull_down{
+  margin-top:75px;
+}
+
+/*  --------------------------------------------------
+  Panels
+  -------------------------------------------------- */
+  div.panel {
+    padding: 20px 20px 2px 20px;
+    background: #efefef;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    margin: 0 0 20px 0;
+  }
+  
+  hr {
+    border: 1;
+    background-color: #C0C0C0;
+    height: 1px;
+  }
+  
+  #moveup{
+    margin-top:-18px;
+    margin-left:1px;
+  }
 
 /* line 22, ../../app/stylesheets/application.scss */
 #moveup {
