@@ -9,39 +9,35 @@
 	    <div class="navbar navbar-fixed-top">
 	      <div class="navbar-inner">
 	        <div class="container">
-				<div class="nav-collapse">
-				  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path, :class => 'brand' %>
-				  <%= render :partial => "/shared/header" -%>
-				</div>
+						<div class="nav-collapse">
+						  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path, :class => 'brand' %>
+						  <%= render :partial => "/shared/header" -%>
+						</div>
 	        </div>
 	      </div>
 	    </div>
 	
 	    <div class="container">	
-			<div class="row">
-				<div class="span4">
-					<%= link_to image_tag("robijn_2.png", :border=>0), "/about" %>
-			 	</div>
-		
-				<div class="span8" id="test">
-					<h1>Avoiding The Next Banking Crisis</h1>
-					<p>A blog about the financial markets, by Robijn Hornstra.</p>
-				</div>
-			</div>
-	      
-			<div class="row">	        
-				<%= yield %>	
-			</div>
- 
-			<hr />
+				<div class="row">
+					<div class="span4">
+						<%= link_to image_tag("robijn_2.png", :border=>0), "/about" %>
+				 	</div>
 			
-		  	<footer>
-	        	<%= render :partial => "/shared/footer" -%>
-	      	</footer>
-	
-	
-	
-	
+					<div class="span8" id="test">
+						<h1>Avoiding The Next Banking Crisis</h1>
+						<p>A blog about the financial markets, by Robijn Hornstra.</p>
+					</div>
+				</div>
+		      
+				<div class="row">	        
+					<%= yield %>	
+				</div>
+	 
+				<hr />
+				
+			  <footer>
+		      <%= render :partial => "/shared/footer" -%>
+		    </footer>
 	    </div>
 
     <%= render :partial => "/shared/javascripts" %>
