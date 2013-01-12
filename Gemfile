@@ -8,7 +8,7 @@ group :development do
 	gem 'sqlite3'
 end
 
-#gem 'pg'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
