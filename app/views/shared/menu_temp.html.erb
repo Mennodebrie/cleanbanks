@@ -10,7 +10,7 @@
   <% if (children = menu_branch.children unless hide_children).present? -%>
     <% dropdown = "class='dropdown'" -%>
     <li<%= ['', dropdown].compact.join(' ').gsub(/\ *$/, '').html_safe %>>
-    <%= link_to menu_branch.url, :class => 'dropdown-toggle', "data-toggle" => "dropdown" do -%>
+    <%= link_to "#", :class => 'dropdown-toggle', "data-toggle" => "dropdown" do -%>
       <%= menu_branch.title %>
       <b class="caret"></b>
     <% end %>
@@ -21,15 +21,12 @@
 
 
   <% if (children = menu_branch.children unless hide_children).present? -%>
-    <% if menu_branch_counter == 1 %>
-      <ul class="dropdown-menu sub-menu">
-    <% else %>
-      <ul class="dropdown-menu">
-    <% end %>    
-    
-      <%= render :partial => '/shared/menu_branch', :collection => children, 
-                 :locals => {
 
+    <ul class="dropdown-menu sub-menu">
+
+      <%= render :partial => '/shared/menu_branch', :collection => children,
+                 :locals => {
+                   :apply_css => local_assigns[:apply_css],
                    :hide_children => !!hide_children
                  } -%>
     </ul>

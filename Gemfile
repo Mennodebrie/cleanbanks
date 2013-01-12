@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-# gem 'rails', '3.0.11'
+gem 'rails', '3.0.19'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,7 +8,7 @@ group :development do
 	gem 'sqlite3'
 end
 
-gem 'pg'
+#gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
