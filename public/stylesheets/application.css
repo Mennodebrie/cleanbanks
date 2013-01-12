@@ -31,6 +31,11 @@ hr {
     color: #C0C0C0;
 }
 
+
+/*  --------------------------------------------------
+  Navbar dropdown
+  -------------------------------------------------- */
+
 ul.nav li.dropdown:hover > ul.dropdown-menu{
     display: block;    
 }
@@ -43,7 +48,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 }
 
 .dropdown-menu .sub-menu {
-    left: 150px;
+    left: 100%;
     position: absolute;
     top: 0;
     visibility: hidden;

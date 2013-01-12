@@ -21,12 +21,12 @@
 
 
   <% if (children = menu_branch.children unless hide_children).present? -%>
-    <% if menu_branch_counter == 1 %>
+<!--     <% if menu_branch_counter == 1 %>
       <ul class="dropdown-menu sub-menu">
     <% else %>
       <ul class="dropdown-menu ">
-    <% end %>    
-    <!-- <ul class="dropdown-menu sub-menu <%= menu_branch_counter %>">-->
+    <% end %>  -->   
+     <ul class="dropdown-menu sub-menu <%= menu_branch_counter %>">
       <%= render :partial => '/shared/menu_branch', :collection => children, 
                  :locals => {
 
