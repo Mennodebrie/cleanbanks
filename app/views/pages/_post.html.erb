@@ -4,7 +4,7 @@
       <h1><%= link_to @blog_post.title, blog_post_url(@blog_post) %></h1>
       <section class='details'>
         <time datetime="<%=l @blog_post.published_at.to_date, :format => :default %>" class='posted_at'>
-          <%= t('created_at', :scope => 'blog.shared.posts', :when => l(@blog_post.published_at.to_date, :format => :short)) %>
+          <%= t('created_at', :scope => 'blog.shared.posts', :when => l(@blog_post.published_at.to_date, :format => :long)) %>
         </time>
         <%= "#{t('by', :scope => 'blog.posts.show')} #{@blog_post.author.username}" if @blog_post.author.present? %>.
         <% if (categories = @blog_post.categories).any? %>
