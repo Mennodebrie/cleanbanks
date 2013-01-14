@@ -9,8 +9,9 @@
 
   <% if (children = menu_branch.children unless hide_children).present? -%>
     <% dropdown = "class='dropdown'" -%>
+    <% caret = "class='caret'" -%>
     <li<%= ['', dropdown].compact.join(' ').gsub(/\ *$/, '').html_safe %>>
-    <%= link_to menu_branch.url, :class => 'dropdown-toggle', "data-toggle" => "dropdown" do -%>
+    <%= link_to menu_branch.url do -%>
       <%= menu_branch.title %>
       <b class="caret"></b>
     <% end %>
