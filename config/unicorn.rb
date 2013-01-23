@@ -5,6 +5,6 @@ stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
 listen "/tmp/unicorn.cleanbanks.sock"
-listen 8081, :tcp_nopush => true
+listen 8082, :tcp_nopush => true
 worker_processes 2
 timeout 30
