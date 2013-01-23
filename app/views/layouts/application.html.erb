@@ -9,7 +9,7 @@
 	    <div class="navbar navbar-fixed-top">
 	      <div class="navbar-inner">
 	        <div class="container">
-						<div class="nav-collapse">
+						<div class="nav-collapse collapse navbar-responsive-collapse">
 						  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path, :class => 'brand' %>
 						  <%= render :partial => "/shared/header" -%>
 						</div>
