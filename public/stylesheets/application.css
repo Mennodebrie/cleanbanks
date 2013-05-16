@@ -3,7 +3,7 @@ html, body {
   /*background-color: #eee;*/
 }
 
-body { 
+body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -35,13 +35,13 @@ h1 {
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     margin: 0 0 20px 0;
   }
-  
+
   hr {
     border: 1;
     background-color: #C0C0C0;
     height: 1px;
   }
-  
+
   #moveup{
     margin-top:-18px;
     margin-left:1px;
@@ -63,7 +63,7 @@ h1 {
   -------------------------------------------------- */
 
 ul.nav li.dropdown:hover > ul.dropdown-menu{
-    display: block;    
+    display: block;
 }
 
 .navbar .nav .selected > a, .navbar .nav .selected > a:hover {
@@ -76,7 +76,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 .dropdown-menu .sub-menu {
     left: 100%;
     position: absolute;
-    top: 0;
+    top: 0px;
     visibility: hidden;
     margin-top: -1px;
 }
@@ -84,6 +84,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
     display: block;
+    margin-top: -10px;
 }
 
 .navbar .sub-menu:before {

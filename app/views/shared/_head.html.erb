@@ -7,11 +7,11 @@
   <%= csrf_meta_tag if RefinerySetting.find_or_set(:authenticity_token_on_frontend, true)-%>
   <%= yield :meta %>
 
-  
-  <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" %>
-  
 
-	<%= stylesheet_link_tag '/stylesheets/ie.css', :media => 'screen' %>	
+  <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" %>
+
+
+	<%= stylesheet_link_tag '/stylesheets/ie.css', :media => 'screen' %>
 	<%= stylesheet_link_tag '/stylesheets/application.css', :media => 'screen' %>
  	<%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Gafata', :media => 'screen' %>
 
@@ -19,6 +19,8 @@
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
-  <%= javascript_include_tag 'jquery-rails','modernizr-min','application' %>
-  <%= javascript_include_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js" %>
+  <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js' %>
+  <%= javascript_include_tag 'modernizr-min','application' %>
+  <%= javascript_include_tag "http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js" %>
+
 </head>

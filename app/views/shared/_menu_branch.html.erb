@@ -2,7 +2,7 @@
   if !!local_assigns[:apply_css] and (classes = menu_branch_css(local_assigns)).any?
     css = "class='#{classes.join(' ')}'".html_safe
   end
- 
+
  # dom_id DEPRECATED: REMOVE AT 1.1, serves no purpose same with css attributes 'first' and 'last'
   dom_id = "id='item_#{menu_branch_counter}'".html_safe if menu_branch.parent_id.nil?
 -%>
@@ -26,9 +26,9 @@
       <ul class="dropdown-menu sub-menu">
     <% else %>
       <ul class="dropdown-menu ">
-    <% end %>  -->   
+    <% end %>  -->
      <ul class="dropdown-menu sub-menu <%= menu_branch_counter %>">
-      <%= render :partial => '/shared/menu_branch', :collection => children, 
+      <%= render :partial => '/shared/menu_branch', :collection => children,
                  :locals => {
                    :hide_children => !!hide_children
                  } -%>

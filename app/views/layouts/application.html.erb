@@ -5,7 +5,7 @@
   <body>
     <%= site_bar -%>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-	
+
 	    <div class="navbar navbar-fixed-top">
 	      <div class="navbar-inner">
 	        <div class="container">
@@ -16,25 +16,25 @@
 	        </div>
 	      </div>
 	    </div>
-	
-	    <div class="container">	
+
+	    <div class="container">
 				<div class="row">
 					<div class="span4">
 						<%= link_to image_tag("robijn_2.png", :border=>0), "/about" %>
 				 	</div>
-			
+
 					<div class="span8" id="pull_down">
 						<h1>Avoiding The Next Banking Crisis</h1>
 						<p><em>A blog about the financial markets, by Robijn Hornstra.</em></p>
 					</div>
 				</div>
-		      
-				<div class="row">	        
-					<%= yield %>	
+
+				<div class="row">
+					<%= yield %>
 				</div>
-	 
+
 				<hr />
-				
+
 			  <footer>
 		      <%= render :partial => "/shared/footer" -%>
 		    </footer>
